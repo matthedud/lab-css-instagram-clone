@@ -3,8 +3,99 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
+* {
+	box-sizing: border-box;
+}
 
 body {
-  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
+	font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+}
+main{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  margin-right: 30px;
+}
+
+footer ul li{
+  margin: 2px 8px;
+}
+
+.top-background{
+  position: fixed;
+  top: 0;
+  height: 40vh;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(#1c5380, #06365f);
+}
+
+
+section{
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin: 30px;
+}
+.title-image{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-image button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 6rem;
+  height: 2.5rem;
+  border: solid rgb(17, 22, 94) 1px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  background-image: linear-gradient(#1c5380, #06365f);
+}
+
+article{
+  background-image: url('../images/frame.png');
+  /* background-color: white; */
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  margin: 10px 0px;
+}
+
+article p{
+  margin-bottom: 10px;
+}
+
+article h1{
+  font-size: x-large;
+  width: 70%;
+  color:#06365f;
+  margin: 1rem 0rem;
+}
+article .app-store-links{
+  margin-top: 2rem;
 }
